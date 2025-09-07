@@ -1,0 +1,17 @@
+"""
+#**Sample Demo Inputs by Intent**
+
+* "hello there" → `GREETINGS`
+
+* "I want to buy a laptop" → `PRODUCT_SEARCH`
+* "Show me the latest discounts" → `CHECK_SALE_ITEMS`
+
+* "What payment methods do you accept?" → `FAQ_PAYMENT_METHODS`
+
+* "Suggest similar items" → `VIEW_RECOMMENDATIONS`
+* "Why did you recommend this?" → `PRODUCT_EXPLAINABILITY`
+
+* "sdkfjhsdjkfh" → should trigger `fallback`
+* "banana" → likely `fallback`
+---
+"""
