@@ -1,0 +1,17 @@
+                      precision    recall  f1-score   support
+
+    CHECK_SALE_ITEMS       0.00      0.00      0.00         3
+    CONNECT_TO_AGENT       0.00      0.00      0.00         3
+             GOODBYE       0.00      0.00      0.00         4
+           GREETINGS       0.88      0.99      0.93       362
+               OTHER       0.00      0.00      0.00         1
+      PRODUCT_SEARCH       0.47      0.44      0.45        34
+         RETURN_ITEM       0.00      0.00      0.00         5
+ SENTIMENT_COMPLAINT       0.33      0.24      0.28        17
+    SENTIMENT_PRAISE       0.95      0.82      0.88        76
+VIEW_PRODUCT_DETAILS       0.63      0.43      0.51        28
+VIEW_RECOMMENDATIONS       0.00      0.00      0.00         6
+
+            accuracy                           0.84       539
+           macro avg       0.30      0.27      0.28       539
+        weighted avg       0.80      0.84      0.81       539

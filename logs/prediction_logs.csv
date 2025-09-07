@@ -1,0 +1,49 @@
+2025-07-21T08:10:31.542389,hello there,GREETINGS,rule_based
+2025-07-21T08:53:45.168861,hello there,GREETINGS,rule_based,
+2025-07-21T08:53:45.169858,I want to buy a phone,PRODUCT_SEARCH,rule_based,
+2025-07-21T08:53:48.106299,skdjslkslskdj,OTHER,fallback,
+2025-07-21T09:01:34.000689,hello there,GREETINGS,rule_based,
+2025-07-21T09:02:01.282212,track my orders,PRODUCT_SEARCH,roberta,0.9987022876739502
+2025-07-21T09:11:54.001953,hello there,GREETINGS,rule_based,
+2025-07-21T14:57:01.415276,Show me the latest discounts,CHECK_SALE_ITEMS,roberta,0.9904628396034241
+2025-07-21T15:37:15.439819,What’s in my shopping cart?,PRODUCT_SEARCH,roberta,0.9987806677818298
+2025-07-21T19:59:45.304683,I want to buy a laptop,PRODUCT_SEARCH,rule_based,
+2025-07-21T20:01:36.096923,Add this to my cart,PRODUCT_SEARCH,roberta,0.9943265318870544
+2025-07-21T20:02:07.407138,Track my orders,PRODUCT_SEARCH,roberta,0.9985559582710266
+2025-07-21T20:02:40.836640,Cancel my recent order,PRODUCT_SEARCH,rule_based,
+2025-07-21T20:02:54.960089,Cancel my recent order,PRODUCT_SEARCH,rule_based,
+2025-07-21T20:03:24.420599,What is your return policy?,RETURN_ITEM,roberta,0.9947589039802551
+2025-07-21T20:04:17.337998,Do you offer cash on delivery?,CHECK_SALE_ITEMS,roberta,0.9909456968307495
+2025-07-21T20:04:47.332204,What payment methods do you accept?,FAQ_PAYMENT_METHODS,rule_based,
+2025-07-21T20:05:22.905576,Can I see more details about this phone?,GREETINGS,rnn,0.926132082939148
+2025-07-21T20:06:41.957088,Show me the latest discounts,CHECK_SALE_ITEMS,roberta,0.9904628396034241
+2025-07-21T20:07:06.186270,hello there,GREETINGS,rule_based,
+2025-07-21T20:07:29.273809,see you later,OTHER,fallback,
+2025-07-21T20:09:49.576844,see you later,OTHER,fallback,
+2025-07-21T20:10:47.137393,Talk to a human,PRODUCT_SEARCH,roberta,0.8735358715057373
+2025-07-21T20:12:04.722445,talk to a human,OTHER,fallback,
+2025-07-21T20:13:07.469201,talk to a human,OTHER,fallback,
+2025-07-21T20:13:32.862064,Why did you recommend this?,VIEW_RECOMMENDATIONS,roberta,0.9961697459220886
+2025-07-21T20:13:59.119035,Suggest similar items,VIEW_RECOMMENDATIONS,roberta,0.9746351838111877
+2025-07-21T20:14:29.345630,Is this item in stock?,GREETINGS,rnn,0.9963104128837585
+2025-07-21T20:15:06.573751,show me details and cancel it,VIEW_PRODUCT_DETAILS,rule_based,
+2025-07-21T20:15:35.251155,banana,OTHER,fallback,
+2025-07-21T20:15:55.918269,see you later,OTHER,fallback,
+2025-07-21T20:16:39.395124,sdkfjhsdjkfh,OTHER,fallback,
+2025-07-22T07:30:48.223491,hello there,GREETINGS,rule_based,
+2025-07-22T07:31:36.808886,I want to buy a laptop,PRODUCT_SEARCH,rule_based,
+2025-07-22T07:31:56.424651,Show me the latest discounts,CHECK_SALE_ITEMS,roberta,0.9904628396034241
+2025-07-22T07:32:31.965935,banana,OTHER,fallback,
+2025-07-22T07:32:53.098578,Why did you recommend this?,VIEW_RECOMMENDATIONS,roberta,0.9961697459220886
+2025-07-22T07:33:11.095667,Suggest similar items,VIEW_RECOMMENDATIONS,roberta,0.9746351838111877
+2025-07-22T07:33:36.068250,Why did you recommend this?,VIEW_RECOMMENDATIONS,roberta,0.9961697459220886
+2025-07-22T10:42:59.602820,hello there,GREETINGS,rule_based,
+2025-07-22T10:43:24.178407,Show me the latest discounts,CHECK_SALE_ITEMS,roberta,0.9904628396034241
+2025-07-22T11:20:30.577379,Show me the latest discounts,CHECK_SALE_ITEMS,roberta,0.9904628396034241
+2025-07-22T12:53:20.267030,hello there,GREETINGS,rule_based,
+2025-07-22T12:53:47.826867,Show me the latest discounts,CHECK_SALE_ITEMS,roberta,0.9904628396034241
+2025-07-22T14:22:58.637642,Show me the latest discounts,CHECK_SALE_ITEMS,roberta,0.9904628396034241
+2025-09-07T20:23:47.034397,I want to buy a new laptop,PRODUCT_SEARCH,rule_based,
+2025-09-07T20:25:32.232862,I want to buy a new laptop,PRODUCT_SEARCH,rule_based,
+2025-09-07T20:29:44.073601,Can you recommend something for my home office?,OTHER,fallback,
+2025-09-07T20:30:32.236505,What is the status of my last order?,PRODUCT_SEARCH,rule_based,
