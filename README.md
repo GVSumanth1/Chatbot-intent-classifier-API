@@ -54,3 +54,156 @@ This project provides a **FastAPI-based backend** for detecting user intent usin
 
 ## Project Structure
 
+```
+
+project/
+│
+├── api/
+│   └── app.py              # FastAPI app with /predict endpoint
+│
+├── saved\_models/           # Contains saved models for logreg, roberta, deberta, rnn
+│
+├── utils/
+│   └── intent\_mapping.py   # Rule-based keyword mapping logic
+│
+├── chatbot\_core.py         # Core logic: model loading, prediction, fallback, logging
+│
+├── logs/
+│   └── prediction\_logs.csv # Auto-created log file for predictions
+│
+└── README.md               # You're reading it now!
+
+````
+
+---
+---
+
+## What I did
+
+### Setup
+- Built a **FastAPI backend** with `/predict` endpoint  
+- Structured project into clear modules (`api`, `utils`, `logs`, etc.)  
+
+### Models Implemented
+- **Rule-based Classifier** → keyword mapping for simple intents  
+- **Logistic Regression (TF-IDF)** → baseline ML model  
+- **RNN with Attention** → sequence learning with GloVe embeddings  
+- **RoBERTa Transformer** → refined text understanding  
+- **DeBERTa Transformer** → better position/context separation  
+
+### Prediction Flow
+1. Rule-based (priority)  
+2. Logistic Regression (≥ 0.70 confidence)  
+3. RoBERTa / DeBERTa / RNN (≥ 0.75 confidence)  
+4. If none pass → fallback response  
+
+### Logging
+- Every request gets logged with: timestamp, input, predicted intent, and model used  
+
+---
+## Project Structure
+
+```
+
+project/
+│
+├── api/
+│   └── app.py              # FastAPI app with /predict endpoint
+│
+├── saved\_models/           # Contains saved models for logreg, roberta, deberta, rnn
+│
+├── utils/
+│   └── intent\_mapping.py   # Rule-based keyword mapping logic
+│
+├── chatbot\_core.py         # Core logic: model loading, prediction, fallback, logging
+│
+├── logs/
+│   └── prediction\_logs.csv # Auto-created log file for predictions
+│
+└── README.md               # You're reading it now!
+
+````
+
+
+---
+
+## How to Run
+
+1. **Install dependencies**
+
+   ```bash
+   ! pip install fastapi uvicorn transformers scikit-learn torch pandas joblib
+
+````
+
+2. **Start the API**
+   From your notebook or terminal:
+
+   ```bash
+   uvicorn api.app:app --reload
+   ```
+
+3. **Open in browser**
+   Visit: [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
+   Use the Swagger UI to test the `/predict` endpoint.
+
+---
+`````
+
+---
+
+## Example Request & Response
+
+### Endpoint
+`POST /predict`
+
+---
+
+### Request Body
+```json
+{
+  "message": "I want to buy a new laptop"
+}
+
+```
+### Sample Response:
+```json
+{
+  "input": "I want to buy a new laptop",
+  "predicted_intent": "PRODUCT_SEARCH",
+  "source": "roberta",
+  "confidence": 0.985,
+  "confidence_level": "high",
+  "timestamp": "2025-07-21T15:20:17.123Z"
+}
+
+````
+
+## Intent Detection Logic
+
+1. **Rule-based** match (priority)
+2. Logistic Regression (TF-IDF + sklearn)
+3. RoBERTa transformer (Hugging Face)
+4. DeBERTa transformer
+5. RNN with attention
+6. Fallback: Ask user to rephrase or connect to agent
+
+Each model must exceed a confidence threshold:
+
+* `LogReg`: ≥ 0.70
+* `All others`: ≥ 0.75
+
+If all models fail → fallback message is triggered.
+
+---
+
+## Prediction Logs
+
+Every prediction is saved to `logs/prediction_logs.csv` with:
+
+* Timestamp
+* User input
+* Predicted intent
+* Model used
+
+---
